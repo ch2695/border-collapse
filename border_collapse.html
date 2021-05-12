@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>보더 컬랩스 사용하기</title>
+</head>
+<body>
+    <!--
+        border-collapse 속성은 table요소에서만 적용됩니다. table요소의 테두리선과 th,td
+        의 테두리선은 각각 별개의 테두리선 입니다. 이것을 붕괴하여 1개의 테두리선으로
+        만드는 속성.
+    -->
+    <style>
+        table{
+            width: 200px;
+            height: 100px;
+            font-size: 40px;
+
+            border: 4px solid #f80;          /* 오렌지 테두리선 */
+            border-collapse : collapse;     /* 테이블의 테두릿 선과 td의 테두리선이 1개로 만들어지는 것 */
+        }
+        th,td{
+            text-align: center;
+
+            border: 4px solid #08f;        /* 로얄블루 테두리선 */
+        }
+    </style>
+    <table>
+        <tr>
+            <th>1</th>
+            <th>2</th>
+            <th>3</th>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+        </tr>
+    </table>
+</body>
+</html>
